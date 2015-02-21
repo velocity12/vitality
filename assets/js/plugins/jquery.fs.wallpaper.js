@@ -408,6 +408,7 @@
 		}
 
 		if (!isMobile) {
+			alert("Not Mobile")
 			var html = '<div class="wallpaper-media wallpaper-video' + ((firstLoad !== true) ? ' animated' : '') +'">';
 			html += '<video';
 			if (data.loop) {
@@ -438,7 +439,7 @@
 
 					if ($(e.target).is($videoContainer)) {
 						$videoContainer.off(transitionEvent);
-
+                        alert("Clean MEdia")
 						_cleanMedia(data);
 					}
 				});
