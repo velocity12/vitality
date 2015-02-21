@@ -275,7 +275,7 @@
 			} else if (typeof source === "object" && !source.hasOwnProperty("fallback")) {
 				// html5 video
 				_loadVideo(source, data, firstLoad);
-				alert("Video is Loaded")
+			
 							} else {
 				// regular old image
 				if (data.responsiveSource) {
@@ -408,7 +408,7 @@
 		}
 
 		if (!isMobile) {
-			alert("Not Mobile")
+			
 			var html = '<div class="wallpaper-media wallpaper-video' + ((firstLoad !== true) ? ' animated' : '') +'">';
 			html += '<video';
 			if (data.loop) {
@@ -432,13 +432,13 @@
 
 			var $videoContainer = $(html),
 				$video = $videoContainer.find("video");
-				alert($video)
+				
 
 			$video.one("loadedmetadata.wallpaper", function(e) {
-				alert("Loaded Medtadata.wallpaper")
+				//--This is the issue
 				$videoContainer.on(transitionEvent, function(e) {
 					_killEvent(e);
-					alert("Event Killled")
+				
 
 					if ($(e.target).is($videoContainer)) {
 						$videoContainer.off(transitionEvent);
