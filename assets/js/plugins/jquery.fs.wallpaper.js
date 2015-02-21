@@ -275,11 +275,11 @@
 			} else if (typeof source === "object" && !source.hasOwnProperty("fallback")) {
 				// html5 video
 				_loadVideo(source, data, firstLoad);
-				alert("Loading FallBack 1")
-			} else {
+				alert("Video is Loaded")
+							} else {
 				// regular old image
 				if (data.responsiveSource) {
-					alert("Loading Fallback 2")
+
 					for (var i in data.responsiveSource) {
 						if (data.responsiveSource.hasOwnProperty(i)) {
 							data.responsiveSource[i].mq.removeListener(_onRespond);
