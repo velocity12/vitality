@@ -87,7 +87,7 @@
     $("header.video").wallpaper({
         source: {
             poster: "assets/img/bg-mobile-fallback.jpg",
-            mp4: "assets/mp4/camera.mp4"
+            mp4: "assets/mp4/media1.mp4"
         }
     });
 
