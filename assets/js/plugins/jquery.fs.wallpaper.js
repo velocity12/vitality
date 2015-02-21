@@ -434,12 +434,14 @@
 				$video = $videoContainer.find("video");
 
 			$video.one("loadedmetadata.wallpaper", function(e) {
+				alert("Loaded Medtadata.wallpaper")
 				$videoContainer.on(transitionEvent, function(e) {
 					_killEvent(e);
+					alert("Event Killled")
 
 					if ($(e.target).is($videoContainer)) {
 						$videoContainer.off(transitionEvent);
-                        alert("Clean MEdia")
+                        
 						_cleanMedia(data);
 					}
 				});
