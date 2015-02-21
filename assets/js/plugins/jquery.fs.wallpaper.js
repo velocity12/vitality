@@ -437,7 +437,7 @@
 			$video.one("loadedmetadata.wallpaper", function(e) {
 				//--This is the issue
 
-				alert("hi")
+				
 				$videoContainer.on(transitionEvent, function(e) {
 					_killEvent(e);
 				
