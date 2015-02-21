@@ -432,6 +432,7 @@
 
 			var $videoContainer = $(html),
 				$video = $videoContainer.find("video");
+				alert($video)
 
 			$video.one("loadedmetadata.wallpaper", function(e) {
 				alert("Loaded Medtadata.wallpaper")
